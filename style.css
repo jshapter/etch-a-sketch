@@ -1,0 +1,38 @@
+/* body {
+    background-color: blanchedalmond;
+} */
+
+#grid-container {
+    display: inline-grid;
+    width: 960px;
+    height: 960px;
+}
+
+.cell {
+    border: 1px solid black;
+    margin: 1px;
+    /* transition: 1s; */
+}
+
+/* .cell:hover {
+    animation-name: test;
+    animation-duration: 2s;
+}
+
+@keyframes test {
+    0% {background-color: black;}
+    25% {background-color: black;}
+    50% {background-color: black;}
+    100% {background-color: black;}
+} */
+
+#flex-container {
+    display: flex;
+}
+
+button {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
