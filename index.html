@@ -9,11 +9,13 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    <div id="flex-container">
-        <button id="16">16x16</button>
-        <button id="75">75x75</button>
-        <button id="900">900x900</button>
-    </div>
     <div id="grid-container"></div>
+    <button id="clear">Clear</button>
+    <button onclick="x16()">16x16</button>
+    <button onclick="x32()">32x32</button>
+    <button onclick="x64()">64x64</button>
+    <button onclick="colour(this.id)" id="red"></button>
+    <button onclick="colour(this.id)" id="blue"></button>
+    <button onclick="colour(this.id)" id="green"></button>
 </body>
 </html>
