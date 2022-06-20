@@ -23,6 +23,9 @@ function draw(colours) {
         cell.addEventListener('mouseover', () => {
             cell.style.backgroundColor = colours;
         });
+    cell.addEventListener('click', () => {
+        cell.style.backgroundColor = 'white';
+    });
     const btn = document.querySelector('#clear');
     btn.addEventListener('click', () => {
         cell.style.backgroundColor = "white";
@@ -37,6 +40,10 @@ function x16() {
     }
     square = 16;
     cellArr = []
+    document.getElementById("x16").disabled = true;
+    document.getElementById("x16").style.borderColor = 'green';
+    document.getElementById("x32").disabled = false;
+    document.getElementById("x64").disabled = false;
     canvas(square);
 }
 
@@ -47,6 +54,10 @@ function x32() {
     }
     square = 32;
     cellArr = []
+    document.getElementById("x16").disabled = false;
+    document.getElementById("x32").disabled = true;
+    document.getElementById("x32").style.borderColor = 'green';
+    document.getElementById("x64").disabled = false;
     canvas(square);
 }
 
@@ -57,6 +68,10 @@ function x64() {
     }
     square = 64;
     cellArr = []
+    document.getElementById("x16").disabled = false;
+    document.getElementById("x32").disabled = false;
+    document.getElementById("x64").disabled = true;
+    document.getElementById("x64").style.borderColor = 'green';
     canvas(square);
 }
 
@@ -67,5 +82,6 @@ function colour(clickID) {
     draw(colours);
 }
 
-console.log(colours)
+document.getElementById("x16").style.borderColor = 'green';
+document.getElementById("x16").disabled = true;
 canvas(square)

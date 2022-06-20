@@ -9,13 +9,26 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
+    <h1>Etch-a-Sketch</h1>
+    <div id="size-buttons">
+        <h2>Canvas size:</h2>
+        <button id="x16" onclick="x16()">16x16</button>
+        <button id="x32" onclick="x32()">32x32</button>
+        <button id="x64" onclick="x64()">64x64</button>
+    </div>
     <div id="grid-container"></div>
-    <button id="clear">Clear</button>
-    <button onclick="x16()">16x16</button>
-    <button onclick="x32()">32x32</button>
-    <button onclick="x64()">64x64</button>
-    <button onclick="colour(this.id)" id="red"></button>
-    <button onclick="colour(this.id)" id="blue"></button>
-    <button onclick="colour(this.id)" id="green"></button>
+    <div id="bottom-buttons">
+        <h2>Select colour:</h2>
+        <div id="colour-buttons">
+            <button onclick="colour(this.id)" id="black"></button>
+            <button onclick="colour(this.id)" id="red"></button>
+            <button onclick="colour(this.id)" id="blue"></button>
+            <button onclick="colour(this.id)" id="green"></button>
+        </div>
+        <div id="clear">
+            <button id="clearB">Clear</button>
+        </div>
+    </div>
+
 </body>
 </html>

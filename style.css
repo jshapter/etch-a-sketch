@@ -1,6 +1,66 @@
+body {
+    background-color: bisque;
+}
+
+#size-buttons {
+    display: flex;
+    width: 960px;
+    margin: 10px;
+}
+
+#size-buttons button {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 #grid-container {
     display: inline-grid;
     border: 5px solid burlywood;
     height: 960px;
     width: 960px;
+}
+
+.cell {
+    background-color: white;
+}
+
+#bottom-buttons {
+    display: flex;
+    width: 960px;
+}
+
+#colour-buttons button {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+#clear {
+    margin: auto;
+}
+
+#black {
+    background-color: black;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+h2 {
+    margin: auto;
+}
+
+button:disabled {
+    color: black;
+    border-color: green;
 }
